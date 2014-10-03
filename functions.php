@@ -62,7 +62,7 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		 */
 		register_nav_menus(
 			array(
-				'main-menu' => __( 'Main Menu', 'odin' )
+				'home-menu' => __( 'Home Menu', 'odin' )
 			)
 		);
 
@@ -190,6 +190,8 @@ add_action( 'after_switch_theme', 'odin_flush_rewrite' );
  */
 function odin_enqueue_scripts() {
 	$template_url = get_template_directory_uri();
+    // Dosis font
+	wp_enqueue_style( 'dosis-font', 'http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800', array(), null, 'all' );
 
 	// Loads Odin main stylesheet.
 	wp_enqueue_style( 'odin-style', get_stylesheet_uri(), array(), null, 'all' );
@@ -202,7 +204,7 @@ function odin_enqueue_scripts() {
 
 	// General scripts.
 	// FitVids.
-	wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array(), null, true );
+	///wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array(), null, true );
 
 	// Main jQuery.
 	wp_enqueue_script( 'odin-main', $template_url . '/assets/js/main.js', array(), null, true );
