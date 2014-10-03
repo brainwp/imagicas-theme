@@ -10,7 +10,7 @@ float: none !important
 	padding-top:5%;
 }
 #home-body{
-	background: url('../images/bg-home.png') no-repeat;
+	background: url('../images/bg-home.png') no-repeat fixed;
 	background-size: cover;
 }
 .logo-home{
@@ -29,7 +29,16 @@ float: none !important
 	background:transparent !important;
 }
 @media only screen and (max-width : 767px) {
-    #nav-home .nav>li{
+    #nav-home .nav>li, #nav-home .nav>li>ul>li {
     	text-align:center !important;
     }
+}
+#contato-body{
+	background: url('../images/bg-contato.png') no-repeat fixed;
+	background-size: cover;
+}
+#header-contato{
+	background:rgba(209,209,209,0.9);
+	min-height:40px;
+	position: fixed;
 }

@@ -26,7 +26,7 @@ if ( ! isset( $content_width ) ) {
 require_once get_template_directory() . '/core/classes/class-bootstrap-nav.php';
 require_once get_template_directory() . '/core/classes/class-shortcodes.php';
 require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.php';
-// require_once get_template_directory() . '/core/classes/class-theme-options.php';
+require_once get_template_directory() . '/core/classes/class-theme-options.php';
 // require_once get_template_directory() . '/core/classes/class-options-helper.php';
 // require_once get_template_directory() . '/core/classes/class-post-type.php';
 // require_once get_template_directory() . '/core/classes/class-taxonomy.php';
@@ -265,3 +265,8 @@ require_once get_template_directory() . '/inc/plugins-support.php';
  * Custom template tags.
  */
 require_once get_template_directory() . '/inc/template-tags.php';
+
+/**
+ * options
+ */
+require_once get_template_directory() . '/inc/options.php';
