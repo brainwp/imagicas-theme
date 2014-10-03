@@ -34,9 +34,9 @@
 <body <?php body_class(); ?> id="contato-body">
 	<header id="header-contato" class="col-md-12 col-sm-12 col-lg-12">
 		<div class="container">
-			<div class="col-md-2">
+			<a href="<?php echo home_url();?>" class="col-md-2">
 			    <img src="<?php bloginfo('template_url');?>/assets/images/logo-contato.png">
-		    </div>
+		    </a>
 		    <div class="pull-right">
 		    	<nav id="nav-contato">
 		    		<?php

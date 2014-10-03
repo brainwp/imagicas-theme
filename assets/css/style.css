@@ -42,3 +42,16 @@ float: none !important
 	min-height:40px;
 	position: fixed;
 }
+#nav-contato a{
+	margin-left:10px;
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.24em;
+	text-transform: uppercase;
+	color:black;
+	padding-bottom: 20px;
+}
+#nav-contato .current_page_item .a, #nav-contato a:hover{
+	transition:300ms all ease;
+	background:rgb(4,31,19);
+	color:white;
+}
