@@ -7,44 +7,43 @@ $odin_theme_options = new Odin_Theme_Options(
 $odin_theme_options->set_tabs(
     array(
         array(
-            'id' => 'home_options', // ID da aba e nome da entrada no banco de dados.
-            'title' => __( 'Home', 'imagicas-theme' ), // Título da aba.
+            'id' => 'social_options', // ID da aba e nome da entrada no banco de dados.
+            'title' => __( 'Social', 'imagicas-theme' ), // Título da aba.
         ),
         array(
-            'id' => 'contato-options',
-            'title' => __( 'Contato', 'imagicas-theme' )
+            'id' => 'geral_options',
+            'title' => __( 'Geral', 'imagicas-theme' )
         )
     )
 );
 $odin_theme_options->set_fields(
     array(
-        'home_section' => array(
-            'tab'   => 'home_options', // Sessão da aba odin_general
-            'title' => __( 'Configurações da página inicial', 'imagicas-theme' ),
+        'social_section' => array(
+            'tab'   => 'social_options', // Sessão da aba odin_general
+            'title' => __( 'Social', 'imagicas-theme' ),
             'fields' => array(
                 array(
-                    'id' => 'logo_home',
-                    'label' => __( 'Logo', 'imagicas-theme' ),
-                    'type' => 'image',
-                    'description' => __( 'Imagem do logo no home', 'imagicas-theme' )
+                    'id' => 'fb_link',
+                    'label' => __( 'Link para o facebook', 'imagicas-theme' ),
+                    'type' => 'text',
                 ),
-                array(
-                    'id' => 'field2',
-                    'label' => __( 'Field 2', 'imagicas-theme' ),
-                    'type' => 'text'
-                )
             )
         ),
-        'adsense_top_section' => array(
-            'tab'   => 'contato-options', // Sessão da aba odin_adsense
-            'title' => __( 'Blocos Adsense Homepage', 'imagicas-theme' ),
+        'geral_section' => array(
+            'tab'   => 'geral_options',
+            'title' => __( 'Opções gerais', 'imagicas-theme' ),
             'fields' => array(
                 array(
-                    'id' => 'banner1',
-                    'label' => __( 'Banner 1', 'imagicas-theme' ),
+                    'id' => 'endereco_footer',
+                    'label' => __( 'Endereço e telefone', 'imagicas-theme' ),
                     'type' => 'textarea',
-                    'default' => 'Default text',
-                    'description' => __( 'Descrition Example', 'imagicas-theme' )
+                    'default' => 'Imágicas Laboratório Fotográfico Analógico PB - Rua Arruda Alvim, 195 -  tel +55 11 3083-2461',
+                ),
+                array(
+                    'id' => 'creditos',
+                    'label' => __( 'Créditos', 'imagicas-theme' ),
+                    'type' => 'textarea',
+                    'default' => 'Todos os direitos reservados, desenvolvido por Brasa.',
                 ),
             )
         ),

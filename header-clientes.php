@@ -31,29 +31,4 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?> id="contato-body">
-		<header id="header-contato" class="col-md-12 col-sm-12 col-lg-12">
-			<div class="container">
-				<a href="<?php echo home_url();?>" class="col-md-2">
-				    <img src="<?php bloginfo('template_url');?>/assets/images/logo-contato.png">
-			    </a>
-			    <div class="pull-right">
-			    	<nav id="nav-contato">
-			    		<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'home-menu',
-									'depth'          => 2,
-									'container'      => false,
-									'menu_class'     => 'nav navbar-nav',
-									'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
-									'walker'         => new Odin_Bootstrap_Nav_Walker()
-								)
-							);
-						?>
-			    	</nav>
-			    </div>
-			</div>
-		</header>
-		<div class="container">
-			<div id="main" class="site-main row">
+	<body <?php body_class(); ?> id="clientes-body">

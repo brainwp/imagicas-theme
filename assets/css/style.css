@@ -40,7 +40,6 @@ float: none !important
 #header-contato{
 	background:rgba(209,209,209,0.9);
 	min-height:40px;
-	position: fixed;
 }
 #nav-contato a{
 	margin-left:10px;
@@ -50,8 +49,194 @@ float: none !important
 	color:black;
 	padding-bottom: 20px;
 }
-#nav-contato .current_page_item .a, #nav-contato a:hover{
+#nav-contato .current_page_item a, #nav-contato a:hover{
 	transition:300ms all ease;
 	background:rgb(4,31,19);
 	color:white;
 }
+.contato_content{
+	margin-top:20px;
+	text-align: center;
+	background:rgba(4,31,19,0.75);
+}
+.contato_content h1{
+	text-align: center;
+	text-transform: uppercase;
+	color:white;
+	font-family: 'Dosis', sans-serif;
+	font-size:4.5em;
+}
+.contato_content p{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 1.1em;
+	color:white;
+	text-align: left;
+	padding:O;
+	margin:0;
+}
+.contato_content form{
+	padding-top:5px;
+	padding-bottom:10px;
+}
+.contato_content form p{
+	font-weight: 400;
+	text-align: left;
+	color:white;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+
+}
+.contato_content form input[type='text'],.contato_content form input[type='email'],.contato_content form textarea{
+	color:black;
+	border:none;
+	background:#c8cbca;
+	width:100%;
+}
+.contato_content form textarea{
+	height:120px;
+}
+.contato_footer{
+	margin-top:20px;
+	background:rgb(4,31,19);
+}
+.contato_footer .fb_link{
+	display:inline-block;
+	width:32px;
+	height:32px;
+	background:url('../images/fb-icon.png') center no-repeat;
+}
+.contato_footer .items{
+	position: absolute;
+	top:0;
+	padding-top:7px;
+	margin-left:40px;
+}
+.contato_footer span{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 1.1em;
+	color:white;
+	margin-left:10px;
+}
+.contato_footer .creditos{
+	text-align:right;
+	float:right;
+	font-style: italic;
+	padding-right:40px;
+	right:0;
+}
+.owl-controls{
+	position: absolute;
+	z-index: 99;
+}
+footer.slider_clientes_nav{
+	width:100%;
+	position: fixed;
+	bottom:0;
+	padding-top:10px;
+	padding-bottom: 10px;
+	background:#03120b;
+	z-index: 999;
+}
+.clientes_slider_sync{
+	margin-right:20px;
+	margin-bottom:0 !important;
+}
+.slider_clientes_nav img{
+	width:80px;
+	height:80px;
+}
+.slider_clientes_nav .icone_nav{
+	margin-top:10px;
+	width:70px;
+	height:60px;
+	background:url('../images/nav_icone.png');
+	right:0;
+}
+.slider_clientes_nav .slider_nav_next{
+	top:0;
+	bottom: 0;
+	width:34px;
+	height:74px;
+	position: absolute;
+	right:-20px;
+	background:url('../images/slider-clientes-next.png');
+	cursor: pointer;
+}
+.slider_clientes_nav .slider_nav_active img{
+	border:2px solid white;
+}
+.slider_clientes_nav .inside{
+	width:84px !important;
+}
+.slider_clientes_nav .slider_nav_active .inside{
+	border:2px solid #d94503;
+}
+.slider_clientes_nav .slider_nav_prev{
+	top:0;
+	bottom: 0;
+	width:34px;
+	height:74px;
+	position: absolute;
+	left:-24px;
+	background:url('../images/slider-clientes-prev.png');
+	cursor: pointer;
+}
+
+@media only screen and (max-width : 767px) {
+	.slider_clientes_nav .slick-track{
+		display:none !important;
+	}
+}
+.slider_clientes_nav .author_name .next{
+	display:block;
+	top:0;
+	bottom: 0;
+	width:34px;
+	height:74px;
+	position: absolute;
+	right:-20px;
+	background:url('../images/slider-clientes-next.png');
+	cursor: pointer;
+}
+.slider_clientes_nav .author_name .prev{
+	display:block;
+	top:0;
+	bottom: 0;
+	width:34px;
+	height:74px;
+	position: absolute;
+	left:-24px;
+	background:url('../images/slider-clientes-prev.png');
+	cursor: pointer;
+}
+.slider_clientes_nav .author_name h1{
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	font-size:2.8em;
+	color:white;
+}
+header.nav_clientes{
+	width:100%;
+	position: fixed;
+	top:35px;
+	z-index:999;
+}
+header.nav_clientes a{
+	font-family: 'Dosis', sans-serif;
+	font-size:1.49em;
+	text-transform: uppercase;
+	padding:7px;
+	display:block;
+	float:left;
+	background:#d6d5d3;
+	color:black;
+	margin-left:10px;
+	transition:ease 400ms all;
+}
+header.nav_clientes a:hover, header.nav_clientes .clientes a{
+	transition:ease 400ms all;
+	background:#03120b;
+	color:white;
+};

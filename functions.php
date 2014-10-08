@@ -28,9 +28,9 @@ require_once get_template_directory() . '/core/classes/class-shortcodes.php';
 require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.php';
 require_once get_template_directory() . '/core/classes/class-theme-options.php';
 // require_once get_template_directory() . '/core/classes/class-options-helper.php';
-// require_once get_template_directory() . '/core/classes/class-post-type.php';
+require_once get_template_directory() . '/core/classes/class-post-type.php';
 // require_once get_template_directory() . '/core/classes/class-taxonomy.php';
-// require_once get_template_directory() . '/core/classes/class-metabox.php';
+require_once get_template_directory() . '/core/classes/class-metabox.php';
 // require_once get_template_directory() . '/core/classes/abstracts/abstract-front-end-form.php';
 // require_once get_template_directory() . '/core/classes/class-contact-form.php';
 // require_once get_template_directory() . '/core/classes/class-post-form.php';
@@ -144,7 +144,7 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 }
 
 add_action( 'after_setup_theme', 'odin_setup_features' );
-
+add_image_size( 'th_clientes', 1080 );
 /**
  * Register widget areas.
  *
@@ -192,6 +192,8 @@ function odin_enqueue_scripts() {
 	$template_url = get_template_directory_uri();
     // Dosis font
 	wp_enqueue_style( 'dosis-font', 'http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800', array(), null, 'all' );
+	//Lato Font
+	wp_enqueue_style( 'lato-font', 'http://fonts.googleapis.com/css?family=Lato:400,700', array(), null, 'all' );
 
 	// Loads Odin main stylesheet.
 	wp_enqueue_style( 'odin-style', get_stylesheet_uri(), array(), null, 'all' );
@@ -205,9 +207,13 @@ function odin_enqueue_scripts() {
 	// General scripts.
 	// FitVids.
 	///wp_enqueue_script( 'fitvids', $template_url . '/assets/js/libs/jquery.fitvids.js', array(), null, true );
+	wp_enqueue_script( 'slick-js', $template_url . '/assets/js/slick.min.js', array(), null, true );
+	wp_enqueue_style( 'slick-css', $template_url . '/assets/css/slick.css', array(), null, 'all' );
+
 
 	// Main jQuery.
 	wp_enqueue_script( 'odin-main', $template_url . '/assets/js/main.js', array(), null, true );
+
 
 	// Grunt main file with Bootstrap, FitVids and others libs.
 	// wp_enqueue_script( 'odin-main-min', $template_url . '/assets/js/main.min.js', array(), null, true );
@@ -270,3 +276,10 @@ require_once get_template_directory() . '/inc/template-tags.php';
  * options
  */
 require_once get_template_directory() . '/inc/options.php';
+
+//cpt clientes
+require_once get_template_directory() . '/inc/cpt-clientes.php';
+function my_function_admin_bar(){
+  return false;
+}
+add_filter( "show_admin_bar" , "my_function_admin_bar");
