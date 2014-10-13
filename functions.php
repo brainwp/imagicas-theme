@@ -29,7 +29,7 @@ require_once get_template_directory() . '/core/classes/class-thumbnail-resizer.p
 require_once get_template_directory() . '/core/classes/class-theme-options.php';
 // require_once get_template_directory() . '/core/classes/class-options-helper.php';
 require_once get_template_directory() . '/core/classes/class-post-type.php';
-// require_once get_template_directory() . '/core/classes/class-taxonomy.php';
+require_once get_template_directory() . '/core/classes/class-taxonomy.php';
 require_once get_template_directory() . '/core/classes/class-metabox.php';
 // require_once get_template_directory() . '/core/classes/abstracts/abstract-front-end-form.php';
 // require_once get_template_directory() . '/core/classes/class-contact-form.php';
@@ -55,7 +55,7 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 		/**
 		 * Add support for multiple languages.
 		 */
-		load_theme_textdomain( 'odin', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'imagicas-theme', get_template_directory() . '/languages' );
 
 		/**
 		 * Register nav menus.
@@ -89,7 +89,7 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 			'uploads'       => true,
 		);
 
-		add_theme_support( 'custom-header', $default );
+		//add_theme_support( 'custom-header', $default );
 
 		/**
 		 * Support Custom Background.
@@ -99,7 +99,7 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 			'default-image' => '',
 		);
 
-		add_theme_support( 'custom-background', $defaults );
+//		add_theme_support( 'custom-background', $defaults );
 
 		/**
 		 * Support Custom Editor Style.
@@ -193,7 +193,7 @@ function odin_enqueue_scripts() {
     // Dosis font
 	wp_enqueue_style( 'dosis-font', 'http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800', array(), null, 'all' );
 	//Lato Font
-	wp_enqueue_style( 'lato-font', 'http://fonts.googleapis.com/css?family=Lato:400,700', array(), null, 'all' );
+	wp_enqueue_style( 'lato-font', 'http://fonts.googleapis.com/css?family=Lato:400,700,300,300italic', array(), null, 'all' );
 
 	// Loads Odin main stylesheet.
 	wp_enqueue_style( 'odin-style', get_stylesheet_uri(), array(), null, 'all' );
@@ -279,6 +279,12 @@ require_once get_template_directory() . '/inc/options.php';
 
 //cpt clientes
 require_once get_template_directory() . '/inc/cpt-clientes.php';
+//acf
+require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
+
+//cpt laboratório
+require_once get_template_directory() . '/inc/cpt-laboratorio.php';
+
 function my_function_admin_bar(){
   return false;
 }

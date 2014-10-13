@@ -7,6 +7,16 @@
  * @package Odin
  * @since 2.2.0
  */
+	$opts = get_option('home_options');
+	$bg_img = $opts['home_bg'];
+	if(empty($bg_img)){
+		$bg_img = '';
+	}
+	else{
+     	$bg_img = wp_get_attachment_image_src( $bg_img, 'th_clientes', false);
+	    $bg_img = $bg_img[0];
+		$bg_img = 'background: url('.$bg_img.') no-repeat center left fixed';
+	}
 ?><!DOCTYPE html>
 <!--[if IE 7]>
 <html class="no-js ie ie7 lt-ie9 lt-ie8" <?php language_attributes(); ?>>
@@ -30,6 +40,6 @@
 	<![endif]-->
 	<?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?> id="home-body">
+<body <?php body_class(); ?> id="home-body" style="<?php echo $bg_img; ?>">
 	<div class="container">
 		<div id="main" class="site-main row">

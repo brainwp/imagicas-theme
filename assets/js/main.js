@@ -61,17 +61,29 @@ var img_height = $(window).height();
 var img_width = $(window).width() + 80;
 
 $('.clientes_slider img').each(function(){
-	$(this).css('height',img_height + 'px');
+	//$(this).css('height',img_height + 'px');
 	$(this).css('width',img_width + 'px');
 });
 if( $("#sync1").length > 0 ){
-	$('.nav_clientes .clientes').addClass('active');
+	$('.nav_clientes a:contains("Clientes")').addClass('active');
 	$('html').attr('style','overflow: hidden !important');
 }
 $('.item').on('click',function(){
 	var num = $(this).attr('data-num-slick');
 	$('#sync1').slickGoTo(num);
 	$('#sync2').slickGoTo(num);
+});
+
+$('#frase_click').on('click',function(){
+	var show = $(this).attr('data-show');
+	if(show == 'false'){
+		$('#frase').fadeIn();
+		$(this).attr('data-show','true');
+	}
+	else{
+	    $('#frase').fadeOut();
+	    $(this).attr('data-show','false');
+	}
 });
 
 

@@ -7,6 +7,16 @@
 	 * @package Odin
 	 * @since 2.2.0
 	 */
+	$opts = get_option('contato_options');
+	$bg_img = $opts['contato_bg'];
+	if(empty($bg_img)){
+		$bg_img = '';
+	}
+	else{
+     	$bg_img = wp_get_attachment_image_src( $bg_img, 'th_clientes', false);
+	    $bg_img = $bg_img[0];
+		$bg_img = 'background: url('.$bg_img.') no-repeat center left fixed black';
+	}
 	?><!DOCTYPE html>
 	<!--[if IE 7]>
 	<html class="no-js ie ie7 lt-ie9 lt-ie8" <?php language_attributes(); ?>>
@@ -31,29 +41,31 @@
 		<?php wp_head(); ?>
 	</head>
 
-	<body <?php body_class(); ?> id="contato-body">
-		<header id="header-contato" class="col-md-12 col-sm-12 col-lg-12">
+	<body <?php body_class(); ?> id="contato-body" style="<?php echo $bg_img ?>">
+		<header id="header_contato" class="nav_clientes">
 			<div class="container">
-				<a href="<?php echo home_url();?>" class="col-md-2">
-				    <img src="<?php bloginfo('template_url');?>/assets/images/logo-contato.png">
-			    </a>
-			    <div class="pull-right">
-			    	<nav id="nav-contato">
-			    		<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'home-menu',
-									'depth'          => 2,
-									'container'      => false,
-									'menu_class'     => 'nav navbar-nav',
-									'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
-									'walker'         => new Odin_Bootstrap_Nav_Walker()
-								)
-							);
+				<div class="row">
+					<?php if($opts['contato_logo_ativar'] == 'true'): ?>
+					<div class="pull-left">
+						<img src="<?php bloginfo('template_url');?>/assets/images/logo-clientes.png">
+					</div><!-- .pull-left -->
+				<?php endif; ?>
+				<nav class="pull-right">
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location' => 'home-menu',
+							'depth'          => 2,
+							'container'      => false,
+							'menu_class'     => 'nav navbar-nav',
+							'fallback_cb'    => 'Odin_Bootstrap_Nav_Walker::fallback',
+							'walker'         => new Odin_Bootstrap_Nav_Walker()
+							)
+						);
 						?>
-			    	</nav>
-			    </div>
-			</div>
-		</header>
+					</nav><!-- .pull-right -->
+				</div><!-- .row -->
+			</div><!-- .container -->
+		</header><!-- .nav_clientes -->
 		<div class="container">
 			<div id="main" class="site-main row">

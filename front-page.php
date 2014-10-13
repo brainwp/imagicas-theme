@@ -7,15 +7,10 @@
  */
 
 get_header('home'); ?>
-<header id="content" class="col-md-12 home-content" role="main">
-	<?php
-	$logo_home = get_option( 'home_options' );
-	$logo_home = wp_get_attachment_image_src( $logo_home['logo_home'], 'full', false );
-	$logo_home = $logo_home[0];
-	?>
-	<div class="logo-home col-md-12" style="background:url('<?php echo $logo_home; ?>') center no-repeat;">
+<header id="content" class="col-md-6 pull-right home-content" role="main">
+	<div class="logo-home col-md-12">
 	</div>
-	<div class="col-md-6 col-md-offset-3">
+	<div class="col-md-12">
 			<nav id="nav-home">
 				    <?php
 						wp_nav_menu(

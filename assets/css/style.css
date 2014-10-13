@@ -10,8 +10,8 @@ float: none !important
 	padding-top:5%;
 }
 #home-body{
-	background: url('../images/bg-home.png') no-repeat fixed;
-	background-size: cover;
+	background-color:#bebebe;
+	background-size: cover !important;
 }
 .logo-home{
 	background:url('../images/logo-home.png') center no-repeat;
@@ -32,10 +32,13 @@ float: none !important
     #nav-home .nav>li, #nav-home .nav>li>ul>li {
     	text-align:center !important;
     }
+    #home-body{
+	background: #bebebe;
+    }
 }
 #contato-body{
-	background: url('../images/bg-contato.png') no-repeat fixed;
-	background-size: cover;
+	background: black;
+	background-color:black;
 }
 #header-contato{
 	background:rgba(209,209,209,0.9);
@@ -55,10 +58,12 @@ float: none !important
 	color:white;
 }
 .contato_content{
-	margin-top:20px;
+	padding-top:10px;
+	background:rgba(18,18,18,0.7);
+	margin-top:103px;
 	text-align: center;
-	background:rgba(4,31,19,0.75);
 }
+
 .contato_content h1{
 	text-align: center;
 	text-transform: uppercase;
@@ -99,6 +104,8 @@ float: none !important
 .contato_footer{
 	margin-top:20px;
 	background:rgb(4,31,19);
+	position: absolute;
+	bottom:0;
 }
 .contato_footer .fb_link{
 	display:inline-block;
@@ -125,6 +132,14 @@ float: none !important
 	font-style: italic;
 	padding-right:40px;
 	right:0;
+}
+@media only screen and (max-width : 767px) {
+	.contato_footer{
+		position: relative;
+	}
+	#contato-body .nav_clientes{
+		position: relative;
+	}
 }
 .owl-controls{
 	position: absolute;
@@ -153,6 +168,7 @@ footer.slider_clientes_nav{
 	height:60px;
 	background:url('../images/nav_icone.png');
 	right:0;
+	cursor:pointer;
 }
 .slider_clientes_nav .slider_nav_next{
 	top:0;
@@ -219,7 +235,7 @@ footer.slider_clientes_nav{
 }
 header.nav_clientes{
 	width:100%;
-	position: fixed;
+	position: absolute;
 	top:35px;
 	z-index:999;
 }
@@ -235,8 +251,77 @@ header.nav_clientes a{
 	margin-left:10px;
 	transition:ease 400ms all;
 }
-header.nav_clientes a:hover, header.nav_clientes .clientes a{
+header.nav_clientes a:hover, header.nav_clientes a.active, header.nav_clientes li.active a{
 	transition:ease 400ms all;
-	background:#03120b;
+	background:#8F9196;
 	color:white;
-};
+}
+#frase{
+	position: fixed;
+	z-index:99;
+	bottom:180px;
+	display:none;
+}
+#frase p{
+	font-size: 1.2em;
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
+	font-weight: 300;
+	color:white;
+	padding-left:20px;
+	padding-right:20px;
+}
+#frase .content_frase{
+	padding:5px;
+	background:rgba(143,145,150,0.8);
+}
+#frase .container, #frase .row, .slider_clientes_nav .container{
+	padding:0;
+	margin:0;
+	margin-left:0px;
+	margin-right:0px;
+}
+#frase .container{
+	margin-left: 30px;
+}
+#frase .content_frase:before{
+content: "";
+position: absolute;
+bottom: -60px;
+right: 0;
+border-width: 0 0 60px 60px;
+border-style: solid;
+border-color: transparent rgba(143,145,150,0.8);
+}
+#frase .icone-left{
+	background: url('../images/aspas-left.png') left no-repeat;
+	height:40px;
+}
+#frase .icone-right{
+	background: url('../images/aspas-right.png') right no-repeat;
+	height:40px;
+}
+#lab-body{
+	background-color:#bebebe;
+	background-size: cover !important;
+}
+.lab_content h1{
+	display:block;
+	background:rgba(18,18,18,0.7);
+	font-family: 'Dosis', sans-serif;
+	font-size:2.4em;
+	color:white;
+	text-transform: uppercase;
+	text-align: center;
+}
+#lab-body #main{
+	margin-top:120px;
+}
+.lab_content p{
+	display:block;
+	background:rgba(18,18,18,0.7);
+	font-family: 'Lato', sans-serif;
+	padding:10px;
+	font-size:1.2em;
+	color:white;
+}
