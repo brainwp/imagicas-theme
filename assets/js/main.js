@@ -50,10 +50,10 @@ $('#sync2').slick({
     asNavFor: '#sync1',
     nextArrow: '<div class="slider_nav_next"></div>',
     prevArrow: '<div class="slider_nav_prev"></div>',
-    infinite:true
+    infinite:true,
     //dots: true,
     //centerMode: true,
-    //focusOnSelect: true,
+    focusOnSelect: false,
     //infinite: true,
 });
 
@@ -70,6 +70,7 @@ if( $("#sync1").length > 0 ){
 }
 $('.item').on('click',function(){
 	var num = $(this).attr('data-num-slick');
+	///alert(num);
 	$('#sync1').slickGoTo(num);
 	$('#sync2').slickGoTo(num);
 });

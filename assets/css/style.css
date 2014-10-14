@@ -367,7 +367,8 @@ font-size: 1.0em;
 	display:inline-block;
 	}
 	.slider_clientes_nav .author_name h1{
-		font-size:1.5em;
+		font-size:1.1em;
+		text-align: center;
 	}
 	.reveal-modal iframe{
 		width:100% !important;
