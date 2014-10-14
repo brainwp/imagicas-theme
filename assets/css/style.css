@@ -23,7 +23,7 @@ float: none !important
 #nav-home a{
 	margin-left:20px;
 	font-family: 'Dosis', sans-serif;
-	font-size: 2em;
+	font-size: 1.6em;
 	text-transform: uppercase;
 	color:black;
 	background:transparent !important;
@@ -39,6 +39,7 @@ float: none !important
 #contato-body{
 	background: black;
 	background-color:black;
+	background-size:cover !important;
 }
 #header-contato{
 	background:rgba(209,209,209,0.9);
@@ -103,7 +104,7 @@ float: none !important
 }
 .contato_footer{
 	margin-top:20px;
-	background:rgba(18,18,18,0.7);
+	background:#181818;
 	position: absolute;
 	bottom:0;
 }
@@ -151,7 +152,7 @@ footer.slider_clientes_nav{
 	bottom:0;
 	padding-top:10px;
 	padding-bottom: 10px;
-	background:#03120b;
+	background:#181818;
 	z-index: 999;
 }
 .clientes_slider_sync{
@@ -241,7 +242,7 @@ header.nav_clientes{
 }
 header.nav_clientes a{
 	font-family: 'Dosis', sans-serif;
-	font-size:1.49em;
+    font-size:1.1em;
 	text-transform: uppercase;
 	padding:7px;
 	display:block;
