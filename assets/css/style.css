@@ -227,7 +227,7 @@ footer.slider_clientes_nav{
 	width:34px;
 	height:74px;
 	position: absolute;
-	left:-24px;
+	left:20px;
 	background:url('../images/slider-clientes-prev.png');
 	cursor: pointer;
 }
