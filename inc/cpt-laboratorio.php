@@ -13,7 +13,7 @@ function cpt_lab() {
 			'parent_item_colon'   => __( 'Item parente', 'imagicas-theme' ),
 			'all_items'           => __( 'Todos itens', 'imagicas-theme' ),
 			'view_item'           => __( 'Ver item', 'imagicas-theme' ),
-			'add_new_item'        => __( 'Adicionar novo cliente', 'imagicas-theme' ),
+			'add_new_item'        => __( 'Adicionar novo item', 'imagicas-theme' ),
 			'add_new'             => __( 'Adicionar novo', 'imagicas-theme' ),
 			'edit_item'           => __( 'Editar item', 'imagicas-theme' ),
 			'update_item'         => __( 'Atualizar item', 'imagicas-theme' ),
@@ -37,8 +37,8 @@ function cpt_lab() {
    );
    $tax->set_labels(
    	array(
-   		'name'                       => _x( 'Taxonomies', 'Taxonomy General Name', 'imagicas-theme' ),
-		'singular_name'              => _x( 'Taxonomy', 'Taxonomy Singular Name', 'imagicas-theme' ),
+   		'name'                       => _x( 'Tipo de itens', 'Taxonomy General Name', 'imagicas-theme' ),
+		'singular_name'              => _x( 'Tipo de item', 'Taxonomy Singular Name', 'imagicas-theme' ),
 		'menu_name'                  => __( 'Tipo de itens', 'imagicas-theme' ),
 		'all_items'                  => __( 'Todos tipos', 'imagicas-theme' ),
 		'parent_item'                => __( 'Item parente', 'imagicas-theme' ),

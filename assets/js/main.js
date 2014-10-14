@@ -86,6 +86,7 @@ $('#frase_click').on('click',function(){
 	}
 });
 
-
-
+if( $("#is_lab").attr('data-lab') == 'true' ){
+	$('.nav_clientes a:contains("Laboratório")').addClass('active');
+}
 });
