@@ -75,7 +75,7 @@ float: none !important
 .contato_content p{
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	font-size: 1.1em;
+    font-size:1em;
 	color:white;
 	text-align: left;
 	padding:O;
@@ -133,6 +133,9 @@ font-size: 1.0em;
 	font-style: italic;
 	padding-right:40px;
 	right:0;
+}
+.contato_footer span p{
+	font-size:0.8em;
 }
 @media only screen and (max-width : 767px) {
 	.contato_footer{
@@ -323,7 +326,7 @@ border-color: transparent rgba(143,145,150,0.8);
 	background:rgba(18,18,18,0.7);
 	font-family: 'Lato', sans-serif;
 padding: 18px 24px;
-font-size: 1.1em;
+font-size: 1.0em;
 	color:white;
 }
 .lab_content_simples{
