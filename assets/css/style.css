@@ -187,6 +187,9 @@ footer.slider_clientes_nav{
 .slider_clientes_nav .slider_nav_active img{
 	border:2px solid white;
 }
+.slider_clientes_nav .item{
+	cursor: pointer;
+}
 .slider_clientes_nav .inside{
 	width:84px !important;
 }
