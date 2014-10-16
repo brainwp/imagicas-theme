@@ -280,6 +280,7 @@ require_once get_template_directory() . '/inc/options.php';
 //cpt clientes
 require_once get_template_directory() . '/inc/cpt-clientes.php';
 //acf
+define( 'ACF_LITE', true );
 require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 
 //cpt laboratório

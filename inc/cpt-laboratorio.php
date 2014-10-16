@@ -57,3 +57,54 @@ function cpt_lab() {
 }
 
 add_action( 'init', 'cpt_lab', 1 );
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_opcoes',
+		'title' => 'Opções',
+		'fields' => array (
+			array (
+				'key' => 'field_543c31a676449',
+				'label' => 'Endereço do Link',
+				'name' => 'link_lab',
+				'type' => 'text',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'laboratorio',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+				0 => 'permalink',
+				1 => 'the_content',
+				2 => 'excerpt',
+				3 => 'custom_fields',
+				4 => 'discussion',
+				5 => 'comments',
+				6 => 'slug',
+				7 => 'author',
+				8 => 'format',
+				9 => 'categories',
+				10 => 'send-trackbacks',
+			),
+		),
+		'menu_order' => 0,
+	));
+}

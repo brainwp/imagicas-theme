@@ -1,0 +1,1080 @@
+http://192.69.95.17:80
+http://192.69.95.17:22
+http://192.69.95.18:22
+http://192.69.95.18:80
+Server sync progress Retrieving VMs
+Server sync progress Retrieving hosts
+Server version is ['XenServer', '6.2.0', '1.3', 'Citrix XenServer']
+Server sync progress Retrieving pools
+Server sync progress Retrieving SRs
+Server sync progress Retrieving tasks
+Server sync progress Retrieving VBDs
+Server sync progress Retrieving VBD metrics
+Server sync progress Retrieving VDIs
+Server sync progress Retrieving networks
+Server sync progress Retrieving PIFs
+Server sync progress Retrieving PIF metrics
+Server sync progress Retrieving PBDs
+Server sync progress Retrieving VIFs
+Server sync progress Retrieving VIF metrics
+Server sync progress Retrieving NIC bonds
+Server sync progress Retrieving VM guest metrics
+Server sync progress Retrieving VM metrics
+Server sync progress Retrieving host metrics
+Server sync progress Retrieving host CPUs
+Server sync progress Retrieving pool patches
+Server sync progress Retrieving host patches
+Server sync progress Retrieving consoles
+Server sync progress Retrieving subjects
+Server sync progress Retrieving roles
+sync-success
+Server sync progress 
+Entering event loop
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxm.py", line 7, in <lambda>
+    return lambda *args, **kwargs: gobject.idle_add(lambda: func(*args, **kwargs) and False)
+  File "/usr/share/openxenmanager/window_addserver.py", line 364, in server_sync_update_tree
+    self.xc_servers[self.selected_host].fill_alerts(self.listalerts)
+  File "/usr/share/openxenmanager/oxcSERVER_addserver.py", line 85, in fill_alerts
+    self.session_uuid)['Value']
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1224, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1572, in __request
+    allow_none=self.__allow_none)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1085, in dumps
+    data = m.dumps(params)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 632, in dumps
+    dump(v, write)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 654, in __dump
+    f(self, value, write)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 658, in dump_nil
+    raise TypeError, "cannot marshal None unless allow_none is enabled"
+TypeError: cannot marshal None unless allow_none is enabled
+Exception in thread Thread-10:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 2190, in event_next
+    except httplib.CannotSendRequest:
+NameError: global name 'httplib' is not defined
+
+Traceback (most recent call last):
+  File "window.py", line 1111, in on_tabbox_focus_tab
+    treeviewlog, listlog)
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 908, in fill_vm_log
+    for log in sorted(filter(self.log_filter_uuid, self.all_messages.values()),  key=itemgetter("timestamp"), reverse=True):
+AttributeError: 'oxcSERVER' object has no attribute 'all_messages'
+Traceback (most recent call last):
+  File "window.py", line 1153, in on_tabbox_focus_tab
+    self.update_tab_host_nics()
+  File "/usr/share/openxenmanager/window_host.py", line 350, in update_tab_host_nics
+    iter = listhostnics.get_iter((0, ))
+ValueError: invalid tree path
+Traceback (most recent call last):
+  File "window.py", line 1118, in on_tabbox_focus_tab
+    name = self.xc_servers[self.selected_host].all_hosts[self.selected_ref]['name_label']
+KeyError: 'OpaqueRef:f3ce83ba-2bbb-b5f6-43bf-420d8d5b3314'
+Traceback (most recent call last):
+  File "window.py", line 1183, in on_tabbox_focus_tab
+    self.update_maps()
+  File "window.py", line 1236, in update_maps
+    self.windowmap.set_dotcode(dotcode)
+  File "/usr/share/openxenmanager/xdot.py", line 1797, in set_dotcode
+    if self.widget.set_dotcode(dotcode, filename):
+  File "/usr/share/openxenmanager/xdot.py", line 1447, in set_dotcode
+    universal_newlines=True
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] Arquivo ou diretório não encontrado
+Traceback (most recent call last):
+  File "window.py", line 1111, in on_tabbox_focus_tab
+    treeviewlog, listlog)
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 908, in fill_vm_log
+    for log in sorted(filter(self.log_filter_uuid, self.all_messages.values()),  key=itemgetter("timestamp"), reverse=True):
+AttributeError: 'oxcSERVER' object has no attribute 'all_messages'
+Traceback (most recent call last):
+  File "window.py", line 1111, in on_tabbox_focus_tab
+    treeviewlog, listlog)
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 908, in fill_vm_log
+    for log in sorted(filter(self.log_filter_uuid, self.all_messages.values()),  key=itemgetter("timestamp"), reverse=True):
+AttributeError: 'oxcSERVER' object has no attribute 'all_messages'
+Exiting...
+http://192.69.95.18:80
+Server sync progress Retrieving VMs
+Server sync progress Retrieving hosts
+Server version is ['XenServer', '6.2.0', '1.3', 'Citrix XenServer']
+Server sync progress Retrieving pools
+Server sync progress Retrieving SRs
+Server sync progress Retrieving tasks
+Server sync progress Retrieving VBDs
+Server sync progress Retrieving VBD metrics
+Server sync progress Retrieving VDIs
+Server sync progress Retrieving networks
+Server sync progress Retrieving PIFs
+Server sync progress Retrieving PIF metrics
+Server sync progress Retrieving PBDs
+Server sync progress Retrieving VIFs
+Server sync progress Retrieving VIF metrics
+Server sync progress Retrieving NIC bonds
+Server sync progress Retrieving VM guest metrics
+Server sync progress Retrieving VM metrics
+Server sync progress Retrieving host metrics
+Server sync progress Retrieving host CPUs
+Server sync progress Retrieving pool patches
+Server sync progress Retrieving host patches
+Server sync progress Retrieving consoles
+Server sync progress Retrieving subjects
+Server sync progress Retrieving roles
+sync-success
+Server sync progress 
+Entering event loop
+Traceback (most recent call last):
+  File "window.py", line 1118, in on_tabbox_focus_tab
+    name = self.xc_servers[self.selected_host].all_hosts[self.selected_ref]['name_label']
+KeyError: 'OpaqueRef:f3ce83ba-2bbb-b5f6-43bf-420d8d5b3314'
+Traceback (most recent call last):
+  File "window.py", line 1183, in on_tabbox_focus_tab
+    self.update_maps()
+  File "window.py", line 1236, in update_maps
+    self.windowmap.set_dotcode(dotcode)
+  File "/usr/share/openxenmanager/xdot.py", line 1797, in set_dotcode
+    if self.widget.set_dotcode(dotcode, filename):
+  File "/usr/share/openxenmanager/xdot.py", line 1447, in set_dotcode
+    universal_newlines=True
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] Arquivo ou diretório não encontrado
+Traceback (most recent call last):
+  File "window.py", line 1335, in on_treevm_button_press_event
+    self.update_tabs()
+  File "window.py", line 673, in update_tabs
+    if self.xc_servers[self.selected_host].has_hardware_script(self.selected_ref):
+  File "/usr/share/openxenmanager/oxcSERVER_host.py", line 183, in has_hardware_script
+    error = self.connection.host.call_plugin(self.session_uuid, ref, "dmidecode", "test", {})
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1224, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1578, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1264, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1289, in single_request
+    self.send_request(h, handler, request_body)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1391, in send_request
+    connection.putrequest("POST", handler, skip_accept_encoding=True)
+  File "/usr/lib/python2.7/httplib.py", line 871, in putrequest
+    raise CannotSendRequest()
+httplib.CannotSendRequest
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 708, in update_performance
+    if ds[name[:3]].count([name, desc]) == 0:
+UnboundLocalError: local variable 'name' referenced before assignment
+
+Traceback (most recent call last):
+  File "window.py", line 1183, in on_tabbox_focus_tab
+    self.update_maps()
+  File "window.py", line 1236, in update_maps
+    self.windowmap.set_dotcode(dotcode)
+  File "/usr/share/openxenmanager/xdot.py", line 1797, in set_dotcode
+    if self.widget.set_dotcode(dotcode, filename):
+  File "/usr/share/openxenmanager/xdot.py", line 1447, in set_dotcode
+    universal_newlines=True
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] Arquivo ou diretório não encontrado
+Traceback (most recent call last):
+  File "window.py", line 1123, in on_tabbox_focus_tab
+    self.xc_servers[self.selected_host].fill_domain_users(self.selected_ref, listusers)
+  File "/usr/share/openxenmanager/oxcSERVER_host.py", line 162, in fill_domain_users
+    users_logged = self.connection.session.get_all_subject_identifiers(self.session_uuid)['Value']
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1224, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1578, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1264, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1294, in single_request
+    response = h.getresponse(buffering=True)
+  File "/usr/lib/python2.7/httplib.py", line 1033, in getresponse
+    raise ResponseNotReady()
+httplib.ResponseNotReady
+Exception in thread Thread-17:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 695, in update_performance
+    data_sources = self.connection.host.get_data_sources(self.session_uuid, ref)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1224, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1578, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1264, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1297, in single_request
+    return self.parse_response(response)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1471, in parse_response
+    p.close()
+  File "/usr/lib/python2.7/xmlrpclib.py", line 560, in close
+    self._parser.Parse("", 1) # end of data
+ExpatError: unclosed token: line 1, column 124925
+
+Traceback (most recent call last):
+  File "window.py", line 1118, in on_tabbox_focus_tab
+    name = self.xc_servers[self.selected_host].all_hosts[self.selected_ref]['name_label']
+KeyError: 'OpaqueRef:f3ce83ba-2bbb-b5f6-43bf-420d8d5b3314'
+Traceback (most recent call last):
+  File "window.py", line 1183, in on_tabbox_focus_tab
+    self.update_maps()
+  File "window.py", line 1236, in update_maps
+    self.windowmap.set_dotcode(dotcode)
+  File "/usr/share/openxenmanager/xdot.py", line 1797, in set_dotcode
+    if self.widget.set_dotcode(dotcode, filename):
+  File "/usr/share/openxenmanager/xdot.py", line 1447, in set_dotcode
+    universal_newlines=True
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] Arquivo ou diretório não encontrado
+Traceback (most recent call last):
+  File "window.py", line 1118, in on_tabbox_focus_tab
+    name = self.xc_servers[self.selected_host].all_hosts[self.selected_ref]['name_label']
+KeyError: 'OpaqueRef:dcad7777-fa60-67a6-f8c0-cc395e4a63c7'
+Traceback (most recent call last):
+  File "window.py", line 1183, in on_tabbox_focus_tab
+    self.update_maps()
+  File "window.py", line 1236, in update_maps
+    self.windowmap.set_dotcode(dotcode)
+  File "/usr/share/openxenmanager/xdot.py", line 1797, in set_dotcode
+    if self.widget.set_dotcode(dotcode, filename):
+  File "/usr/share/openxenmanager/xdot.py", line 1447, in set_dotcode
+    universal_newlines=True
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] Arquivo ou diretório não encontrado
+Exception in thread Thread-34:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 695, in update_performance
+    data_sources = self.connection.host.get_data_sources(self.session_uuid, ref)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1224, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1578, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1264, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1294, in single_request
+    response = h.getresponse(buffering=True)
+  File "/usr/lib/python2.7/httplib.py", line 1033, in getresponse
+    raise ResponseNotReady()
+ResponseNotReady
+
+Exception in thread Thread-31:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 695, in update_performance
+    data_sources = self.connection.host.get_data_sources(self.session_uuid, ref)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1224, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1578, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1264, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1297, in single_request
+    return self.parse_response(response)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1471, in parse_response
+    p.close()
+  File "/usr/lib/python2.7/xmlrpclib.py", line 560, in close
+    self._parser.Parse("", 1) # end of data
+ExpatError: unclosed token: line 1, column 54270
+
+Traceback (most recent call last):
+  File "window.py", line 1123, in on_tabbox_focus_tab
+    self.xc_servers[self.selected_host].fill_domain_users(self.selected_ref, listusers)
+  File "/usr/share/openxenmanager/oxcSERVER_host.py", line 162, in fill_domain_users
+    users_logged = self.connection.session.get_all_subject_identifiers(self.session_uuid)['Value']
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1224, in __call__
+    return self.__send(self.__name, args)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1578, in __request
+    verbose=self.__verbose
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1264, in request
+    return self.single_request(host, handler, request_body, verbose)
+  File "/usr/lib/python2.7/xmlrpclib.py", line 1294, in single_request
+    response = h.getresponse(buffering=True)
+  File "/usr/lib/python2.7/httplib.py", line 1033, in getresponse
+    raise ResponseNotReady()
+httplib.ResponseNotReady
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "window.py", line 1183, in on_tabbox_focus_tab
+    self.update_maps()
+  File "window.py", line 1236, in update_maps
+    self.windowmap.set_dotcode(dotcode)
+  File "/usr/share/openxenmanager/xdot.py", line 1797, in set_dotcode
+    if self.widget.set_dotcode(dotcode, filename):
+  File "/usr/share/openxenmanager/xdot.py", line 1447, in set_dotcode
+    universal_newlines=True
+  File "/usr/lib/python2.7/subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1327, in _execute_child
+    raise child_exception
+OSError: [Errno 2] Arquivo ou diretório não encontrado
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1905, in <lambda>
+    gobject.idle_add(lambda: self.wine.push_alert("%s: %s %s" % (event["snapshot"]["name_label"], event["snapshot"]["name_description"],  (" %.2f%%" % (float(event["snapshot"]["progress"])*100)))) and False)
+KeyError: 'progress'
+Exception in thread Thread-44:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/threading.py", line 810, in __bootstrap_inner
+    self.run()
+  File "/usr/lib/python2.7/threading.py", line 763, in run
+    self.__target(*self.__args, **self.__kwargs)
+  File "/usr/share/openxenmanager/oxcSERVER_newvm.py", line 148, in create_newvm
+    self.track_tasks[ref['Value']] = vm_uuid
+KeyError: 'Value'
+
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:41ad18ce-6005-e9f4-0415-d55470b28862'
+Traceback (most recent call last):
+  File "window.py", line 525, in visible_func
+    self.xc_servers[host].all_vms[ref].get("other_config") and \
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "window.py", line 525, in visible_func
+    self.xc_servers[host].all_vms[ref].get("other_config") and \
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "window.py", line 525, in visible_func
+    self.xc_servers[host].all_vms[ref].get("other_config") and \
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "window.py", line 525, in visible_func
+    self.xc_servers[host].all_vms[ref].get("other_config") and \
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "window.py", line 525, in visible_func
+    self.xc_servers[host].all_vms[ref].get("other_config") and \
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "window.py", line 525, in visible_func
+    self.xc_servers[host].all_vms[ref].get("other_config") and \
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1791, in <lambda>
+    gobject.idle_add(lambda: self.add_vm_to_tree(event["ref"]) and False)
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 580, in add_vm_to_tree
+    if  self.all_vms[vm]['resident_on'] != "OpaqueRef:NULL" and self.all_vms[vm]['resident_on'] in self.hostroot:
+KeyError: 'OpaqueRef:e105d76b-8099-4aca-69a7-d4f150c45a55'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+migrate or start on or resume on2
+
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 2288, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_menubar()  and False)
+  File "/usr/share/openxenmanager/window_menuitem.py", line 1460, in update_menubar
+    for op in self.xc_servers[self.selected_host].all_vms[self.selected_ref]['allowed_operations']:
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 2288, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_menubar()  and False)
+  File "/usr/share/openxenmanager/window_menuitem.py", line 1460, in update_menubar
+    for op in self.xc_servers[self.selected_host].all_vms[self.selected_ref]['allowed_operations']:
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 2288, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_menubar()  and False)
+  File "/usr/share/openxenmanager/window_menuitem.py", line 1460, in update_menubar
+    for op in self.xc_servers[self.selected_host].all_vms[self.selected_ref]['allowed_operations']:
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 2288, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_menubar()  and False)
+  File "/usr/share/openxenmanager/window_menuitem.py", line 1460, in update_menubar
+    for op in self.xc_servers[self.selected_host].all_vms[self.selected_ref]['allowed_operations']:
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 2288, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_menubar()  and False)
+  File "/usr/share/openxenmanager/window_menuitem.py", line 1460, in update_menubar
+    for op in self.xc_servers[self.selected_host].all_vms[self.selected_ref]['allowed_operations']:
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 2288, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_menubar()  and False)
+  File "/usr/share/openxenmanager/window_menuitem.py", line 1460, in update_menubar
+    for op in self.xc_servers[self.selected_host].all_vms[self.selected_ref]['allowed_operations']:
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 2288, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_menubar()  and False)
+  File "/usr/share/openxenmanager/window_menuitem.py", line 1460, in update_menubar
+    for op in self.xc_servers[self.selected_host].all_vms[self.selected_ref]['allowed_operations']:
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 2288, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_menubar()  and False)
+  File "/usr/share/openxenmanager/window_menuitem.py", line 1460, in update_menubar
+    for op in self.xc_servers[self.selected_host].all_vms[self.selected_ref]['allowed_operations']:
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 2288, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_menubar()  and False)
+  File "/usr/share/openxenmanager/window_menuitem.py", line 1460, in update_menubar
+    for op in self.xc_servers[self.selected_host].all_vms[self.selected_ref]['allowed_operations']:
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1905, in <lambda>
+    gobject.idle_add(lambda: self.wine.push_alert("%s: %s %s" % (event["snapshot"]["name_label"], event["snapshot"]["name_description"],  (" %.2f%%" % (float(event["snapshot"]["progress"])*100)))) and False)
+KeyError: 'progress'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "/usr/share/openxenmanager/oxcSERVER.py", line 1859, in <lambda>
+    gobject.idle_add(lambda: self.wine.update_memory_tab() and False)
+  File "/usr/share/openxenmanager/window_vm.py", line 35, in update_memory_tab
+    dynamicmin = self.xc_servers[self.selected_host].all_vms[self.selected_ref]["memory_dynamic_min"]
+KeyError: 'OpaqueRef:8aea23f5-42e6-f542-6f0e-6b22f1b6fb3f'
+Traceback (most recent call last):
+  File "window.py", line 1584, in <module>
+    gtk.main()
+KeyboardInterrupt

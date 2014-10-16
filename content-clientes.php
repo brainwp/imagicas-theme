@@ -28,9 +28,9 @@
 	<div class="container">
 		<div class="row">
 		<?php if($opts['clientes_logo_ativar'] == 'true'): ?>
-			<div class="pull-left">
+			<a href="<?php echo home_url();?>" class="pull-left">
 				<img src="<?php bloginfo('template_url');?>/assets/images/logo-clientes.png">
-			</div><!-- .pull-left -->
+			</a><!-- .pull-left -->
 		<?php endif; ?>
 		<nav class="pull-right">
 			<?php

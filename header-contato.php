@@ -13,8 +13,8 @@
 		$bg_img = '';
 	}
 	else{
-     	$bg_img = wp_get_attachment_image_src( $bg_img, 'th_clientes', false);
-	    $bg_img = $bg_img[0];
+		$bg_img = wp_get_attachment_image_src( $bg_img, 'th_clientes', false);
+		$bg_img = $bg_img[0];
 		$bg_img = 'background: url('.$bg_img.') no-repeat center left fixed black';
 	}
 	?><!DOCTYPE html>
@@ -46,9 +46,9 @@
 			<div class="container">
 				<div class="row">
 					<?php if($opts['contato_logo_ativar'] == 'true'): ?>
-					<div class="pull-left">
+					<a href="<?php echo home_url();?>" class="pull-left">
 						<img src="<?php bloginfo('template_url');?>/assets/images/logo-clientes.png">
-					</div><!-- .pull-left -->
+					</a><!-- .pull-left -->
 				<?php endif; ?>
 				<nav class="pull-right">
 					<?php

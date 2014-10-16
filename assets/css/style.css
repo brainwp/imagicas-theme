@@ -254,7 +254,7 @@ header.nav_clientes{
 	top:35px;
 	z-index:999;
 }
-header.nav_clientes a{
+header.nav_clientes li a{
 	font-family: 'Dosis', sans-serif;
     font-size:1.1em;
 	text-transform: uppercase;

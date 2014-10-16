@@ -8,8 +8,8 @@
 
 get_header('home'); ?>
 <header id="content" class="col-md-6 pull-right home-content" role="main">
-	<div class="logo-home col-md-12">
-	</div>
+	<a href="<?php echo home_url();?>" class="logo-home col-md-12">
+	</a>
 	<div class="col-md-12">
 			<nav id="nav-home">
 				    <?php
