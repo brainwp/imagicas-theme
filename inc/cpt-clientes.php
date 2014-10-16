@@ -53,3 +53,9 @@ $clientes_img->set_fields(
 	);
 
 add_action( 'init', 'cpt_clientes', 1 );
+function change_order_clientes( $query ) {
+	if(is_post_type_archive('clientes')){
+		$query->set('orderby','rand');
+	}
+}
+add_action( 'pre_get_posts', 'change_order_clientes' );
