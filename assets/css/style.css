@@ -203,7 +203,15 @@ footer.slider_clientes_nav{
 	background:url('../images/slider-clientes-prev.png');
 	cursor: pointer;
 }
-
+.principal_img{
+	background:black;
+}
+.principal_img img{
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
 @media only screen and (max-width : 767px) {
 	.slider_clientes_nav .slick-track{
 		display:none !important;

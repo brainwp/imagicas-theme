@@ -57,13 +57,18 @@ $('#sync2').slick({
     //infinite: true,
 });
 
-var img_height = $(window).height();
+var img_height = $(window).height() - $('.slider_clientes_nav').height();
 var img_width = $(window).width() + 80;
 
 $('.clientes_slider img').each(function(){
+	$(this).css('height',img_height + 'px');
+	//$(this).css('width',img_width + 'px');
+});
+$('.principal_img').each(function(){
 	//$(this).css('height',img_height + 'px');
 	$(this).css('width',img_width + 'px');
 });
+
 if( $("#sync1").length > 0 ){
 	$('.nav_clientes a:contains("Clientes")').addClass('active');
 	$('html').attr('style','overflow: hidden !important');
