@@ -147,7 +147,7 @@ $odin_theme_options->set_fields(
               array(
                   'id'          => 'lab_intro', // Obrigatório
                 'label'       => __( 'Texto da página laboratório', 'imagicas-theme' ), // Obrigatório
-            'type'        => 'textarea', // Obrigatório
+            'type'        => 'editor', // Obrigatório
                 'default'     => 'O Imágicas é um laboratório fotográfico que trabalha com revelação e ampliação em processo clássico (preto e branco e analógico). Foi fundado pela laboratorista Rosangela Andrade em 1992 e tem em seu portfólio trabalhos de fotógrafos como: Cristiano Mascaro, Ed Viggiani, Thomas Farkas, German Lorca, Paulo Velloso, Vânia Toledo, Pedro Martinelli, Tiago Santana, Sylvia Diez entre outros. Rosangela que é uma das maiores entusiastas do processo analógico em São Paulo, persevera há 24 anos nesta prática é também fotógrafa e fundadora do Clube do Analógico.', // Opcional (deve ser o id de uma imagem em mídia)
              //'description' => __( 'Descrition Example', 'odin' ), // Opcional
              'attributes' =>
