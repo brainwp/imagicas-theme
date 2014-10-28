@@ -1,36 +1,19 @@
 <?php
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages and that other
- * 'pages' on your WordPress site will use a different template.
+ * page-home
  *
  * @package Odin
  * @since 2.2.0
  */
+get_header('laboratorio'); ?>
+<div class="col-md-8 col-sm-12 col-xs-12 pull-left contato_content">
 
-get_header(); ?>
+	<?php while ( have_posts() ) : the_post(); ?>
+	<?php // Include the page content template.
+		get_template_part( 'content', 'page' ); ?>
 
-	<div id="primary" class="<?php echo odin_full_page_classes(); ?>">
-		<div id="content" class="site-content" role="main">
+	<?php endwhile; ?>
 
-			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
-
-					// Include the page content template.
-					get_template_part( 'content', 'page' );
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-				endwhile;
-			?>
-
-		</div><!-- #content -->
-	</div><!-- #primary -->
-
+</div><!-- .col-md-8 -->
 <?php
-get_footer();
+get_footer('laboratorio');
