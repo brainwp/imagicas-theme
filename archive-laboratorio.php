@@ -16,7 +16,7 @@ get_header('laboratorio'); ?>
 <div class="col-md-3 col-md-offset-1 lab_content_simples">
 	<?php query_posts('lab_tax=simples&posts_per_page=7'); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
-	<a href="<?php echo get_post_meta( get_the_ID(), 'link_lab', true ); ?>" class="col-md-12 box_simples">
+	<a href="<?php echo get_post_meta( get_the_ID(), 'link_lab', true ); ?>" class="col-md-12 box_simples" target="_blank">
 		<span class="pull-left titulo"><?php the_title(); ?></span>
 		<span class="pull-right acesse">acesse >></span>
 	</a><!-- .col-md-12 box_simples -->

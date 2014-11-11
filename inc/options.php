@@ -127,7 +127,7 @@ $odin_theme_options->set_fields(
             'fields' => array(
             	            	array(
                            'id'          => 'lab_logo_ativar', // Obrigatório
-                           'label'       => __( 'Deseja ativar o logo na página de contato?', 'imagicas-theme' ), // Obrigatório
+                           'label'       => __( 'Deseja ativar o logo na página de laboratório?', 'imagicas-theme' ), // Obrigatório
                            'type'        => 'radio', // Obrigatório
                            // 'attributes' => array(), // Opcional (atributos para input HTML/HTML5)
                            'default'     => 'false', // Opcional
