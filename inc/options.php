@@ -155,6 +155,12 @@ $odin_theme_options->set_fields(
                         'style' => 'height:200px;'
                         )
              ),
+              array(
+                  'id'          => 'lab_video_open', // Obrigatório
+                'label'       => __( 'Coloque o link da página que quer ver destacada ao abrir', 'imagicas-theme' ), // Obrigatório
+            'type'        => 'text', // Obrigatório
+             'description' => __( 'A página deverá estar marcada como modal (Reveal-Modal)', 'imagicas-theme' ), // Opcional
+             ),
 
             	)
 ),

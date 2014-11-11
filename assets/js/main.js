@@ -95,4 +95,16 @@ $('#frase_click').on('click',function(){
 if( $("#is_lab").attr('data-lab') == 'true' ){
 	$('.nav_clientes a:contains("Laboratório")').addClass('active');
 }
+if( $("meta[name=lab-video-open]").attr('content').length > 0 ){
+	var value = $("meta[name=lab-video-open]").attr('content');
+	var modal_id = 'reveal-modal-id';
+	$('#' + modal_id).foundation('reveal', 'open', {
+		url: value + '?reveal-modal-ajax=true',
+		success: function (data) {
+				$('#' + modal_id).prepend('<a class="close-reveal-modal">&#215;</a>');
+			}
+		});
+
+}
+
 });

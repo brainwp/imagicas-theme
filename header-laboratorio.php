@@ -39,6 +39,10 @@
 		<!--[if lt IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/assets/js/html5.js"></script>
 		<![endif]-->
+		<?php if(!empty($opts['lab_video_open'])): ?>
+		      <?php $link = esc_url($opts['lab_video_open']); ?>
+		      <meta name="lab-video-open" content="<?php echo $link; ?>" />
+		<?php endif; ?>
 		<?php wp_head(); ?>
 	</head>
 
