@@ -409,9 +409,3 @@ body#clientes-body {
 	position: fixed;
 	background-position: 0% 50px !important;
 }
-#reveal-modal-id{
-	margin-left: 0 !important;
-	left: 25%;
-	right: 25%;
-	width:auto !important;
-}

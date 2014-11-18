@@ -98,6 +98,7 @@ if( $("#is_lab").attr('data-lab') == 'true' ){
 if( $("meta[name=lab-video-open]").attr('content').length > 0 ){
 	var value = $("meta[name=lab-video-open]").attr('content');
 	var modal_id = 'reveal-modal-id';
+	$('#'+modal_id).addClass('medium');
 	$('#' + modal_id).foundation('reveal', 'open', {
 		url: value + '?reveal-modal-ajax=true',
 		success: function (data) {
