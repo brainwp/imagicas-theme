@@ -16,7 +16,7 @@
 <div id="frase">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4 pull-right content_frase">
+			<div class="col-md-6 pull-right content_frase">
 				<div class="col-md-12 pull-left icone-left"></div>
 				<p><?php echo wp_strip_all_tags(get_the_content()); ?></p>
 				<div class="col-md-12 pull-left icone-right"></div>
