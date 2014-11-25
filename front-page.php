@@ -11,7 +11,7 @@ get_header('home'); ?>
 	<a href="<?php echo home_url();?>" class="logo-home col-md-12">
 	</a>
 	<div class="col-md-12">
-			<nav id="nav-home">
+			<nav class="menu_principal" id="nav-home">
 				    <?php
 						wp_nav_menu(
 							array(
@@ -25,6 +25,7 @@ get_header('home'); ?>
 						);
 					?>
 	        </nav>
+	       <?php get_template_part('content','nav-mobile'); ?>
 	</div>
 </header><!-- #content -->
 <?php

@@ -57,15 +57,24 @@ $('#sync2').slick({
     //infinite: true,
 });
 
-
-$('.clientes_slider img').each(function(){
-	var img_height_center = $(window).height() - $('.slider_clientes_nav').height() - $('header.nav_clientes').height() - parseInt($(this).attr('data-height'));
-	var result = img_height_center / 2;
-	console.log(result);
-	$(this).css('margin-top',result + 'px');
-	$(this).css('margin-bottom',result + 'px');
-	//$(this).css('width',img_width + 'px');
-});
+if($(window).width() >= 1080){
+	$('.clientes_slider img').each(function(){
+		var img_height_center = $(window).height() - $('.slider_clientes_nav').height() - $('header.nav_clientes').height() - parseInt($(this).attr('data-height'));
+		var result = img_height_center / 2;
+		$(this).css('margin-top',result + 'px');
+		//$(this).css('margin-bottom',result + 'px');
+		//$(this).css('width',img_width + 'px');
+	});
+}
+else{
+	$('.clientes_slider img').each(function(){
+		var img_height_center = $(window).height() - $('.slider_clientes_nav').height() - $('header.nav_clientes').height() - $(this).height();
+		var result = img_height_center / 2;
+		$(this).css('margin-top',result + 'px');
+		$(this).css('margin-bottom',result + 'px');
+		//$(this).css('width',img_width + 'px');
+	});
+}
 $('.principal_img').each(function(){
 });
 
@@ -95,7 +104,7 @@ $('#frase_click').on('click',function(){
 if( $("#is_lab").attr('data-lab') == 'true' ){
 	$('.nav_clientes a:contains("Laboratório")').addClass('active');
 }
-if( $("meta[name=lab-video-open]").attr('content').length > 0 ){
+if( $("meta[name=lab-video-open]").attr('content') && $("meta[name=lab-video-open]").attr('content').length > 0 ){
 	var value = $("meta[name=lab-video-open]").attr('content');
 	var modal_id = 'reveal-modal-id';
 	$('#'+modal_id).addClass('medium');
@@ -107,5 +116,15 @@ if( $("meta[name=lab-video-open]").attr('content').length > 0 ){
 		});
 
 }
-
+$('#nav_mobile_toggle').on('click',function(e){
+	var show = $(this).attr('data-open');
+	if(show == 'false'){
+		$('#nav_mobile').fadeIn();
+		$(this).attr('data-open','true');
+	}
+    if(show == 'true'){
+	    $('#nav_mobile').fadeOut();
+	    $(this).attr('data-open','false');
+	}
+});
 });

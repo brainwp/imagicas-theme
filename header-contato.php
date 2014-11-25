@@ -50,7 +50,7 @@
 						<img src="<?php bloginfo('template_url');?>/assets/images/logo-clientes.png">
 					</a><!-- .pull-left -->
 				<?php endif; ?>
-				<nav class="pull-right">
+				<nav class="menu_principal pull-right">
 					<?php
 					wp_nav_menu(
 						array(
@@ -64,6 +64,7 @@
 						);
 						?>
 					</nav><!-- .pull-right -->
+					<?php get_template_part('content','nav-mobile'); ?>
 				</div><!-- .row -->
 			</div><!-- .container -->
 		</header><!-- .nav_clientes -->
