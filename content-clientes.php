@@ -7,7 +7,7 @@
 	foreach ( $clientes_img as $image_id ) {
 		if(!empty($image_id)){
 			$img = wp_get_attachment_image_src($image_id,'th_clientes',false);
-			echo '<div class="item principal_img" data-num-slick="'.$i.'"><img data-lazy="'.$img[0].'"></div>';
+			echo '<div class="item principal_img" data-num-slick="'.$i.'"><img data-lazy="'.$img[0].'" data-width="'.$img[1].'" data-height="'.$img[2].'"></div>';
 			$i++;
 		}
 	}

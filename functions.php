@@ -144,7 +144,7 @@ if ( ! function_exists( 'odin_setup_features' ) ) {
 }
 
 add_action( 'after_setup_theme', 'odin_setup_features' );
-add_image_size( 'th_clientes', 1080 );
+add_image_size( 'th_clientes', 2560, 1440);
 /**
  * Register widget areas.
  *

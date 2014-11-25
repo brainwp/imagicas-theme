@@ -57,16 +57,16 @@ $('#sync2').slick({
     //infinite: true,
 });
 
-var img_height = $(window).height() - $('.slider_clientes_nav').height();
-var img_width = $(window).width() + 80;
 
 $('.clientes_slider img').each(function(){
-	$(this).css('height',img_height + 'px');
+	var img_height_center = $(window).height() - $('.slider_clientes_nav').height() - $('header.nav_clientes').height() - parseInt($(this).attr('data-height'));
+	var result = img_height_center / 2;
+	console.log(result);
+	$(this).css('margin-top',result + 'px');
+	$(this).css('margin-bottom',result + 'px');
 	//$(this).css('width',img_width + 'px');
 });
 $('.principal_img').each(function(){
-	//$(this).css('height',img_height + 'px');
-	$(this).css('width',img_width + 'px');
 });
 
 if( $("#sync1").length > 0 ){
