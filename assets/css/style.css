@@ -68,8 +68,9 @@ float: none !important
 .contato_content{
 	padding-top:10px;
 	background:rgba(18,18,18,0.7);
-	margin-top:103px;
-	text-align: center;
+	margin-top:100px;
+	font-size: 0.9em;
+	line-height: 1.5;
 }
 
 .contato_content h1{
@@ -112,13 +113,14 @@ float: none !important
 .contato_footer{
 	margin-top:20px;
 	background:#181818;
-	position: absolute;
+	position: fixed;
 	bottom:0;
 }
 .contato_footer .fb_link{
 	display:inline-block;
 	width:32px;
 	height:32px;
+	margin-top: 5px;
 	background:url('../images/fb-icon.png') center no-repeat;
 }
 .contato_footer .items{
@@ -408,4 +410,30 @@ body#clientes-body {
 #clientes-body header{
 	position: fixed;
 	background-position: 0% 50px !important;
+}
+
+#contact-form-20 label {
+	font-weight: 400;
+	text-align: left;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+#contact-form label {
+	font-weight: 400;
+	text-align: left;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+#contact-form-20 blockquote {
+	text-align: left;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+#contact-form-20 h3 {
+	text-align: left;
+	color: white;
+	font-family: 'Lato', sans-serif;
 }
