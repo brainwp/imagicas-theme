@@ -91,6 +91,13 @@ float: none !important
     	text-align: left !important;
     }
 }
+#home-body footer{
+	position: absolute !important;
+	z-index: 999 !important;
+	bottom:0 !important;
+	width:100% !important;
+	margin:0 !important;
+}
 #contato-body{
 	background: black;
 	background-color:black;
