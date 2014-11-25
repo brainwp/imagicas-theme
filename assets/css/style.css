@@ -14,8 +14,13 @@ float: none !important
 	background-size: cover !important;
 }
 .logo-home{
-	background:url('../images/logo-home.png') center no-repeat;
-	height:373px;
+	top:0;
+	bottom:0;
+	margin:0 auto;
+	left:0;
+	right:0;
+	position: absolute;
+	padding-top:10px;
 }
 
 .navbar-nav {
@@ -58,9 +63,13 @@ float: none !important
 	float:none !important;
 	background: none !important;
 	width:100%;
+
 	border-bottom:1px solid white;
 	margin:0 !important;
 	display:none;
+}
+#home-body header.nav_clientes{
+    display:none;
 }
 @media only screen and (max-width : 767px) {
     #nav-home .nav>li, #nav-home .nav>li>ul>li {
@@ -90,6 +99,15 @@ float: none !important
     	padding:0 !important;
     	text-align: left !important;
     }
+    #home-body footer{
+    	display:block !important;
+    }
+    #home-body header.nav_clientes{
+    	display:block;
+    }
+    .logo-home{
+    	display:none !important;
+    }
 }
 #home-body footer{
 	position: absolute !important;
@@ -97,6 +115,7 @@ float: none !important
 	bottom:0 !important;
 	width:100% !important;
 	margin:0 !important;
+	display:none;
 }
 #contato-body{
 	background: black;

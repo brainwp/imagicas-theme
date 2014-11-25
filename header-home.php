@@ -41,5 +41,15 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> id="home-body" style="<?php echo $bg_img; ?>">
+	<header id="header_contato" class="nav_clientes">
+			<div class="container">
+				<div class="row">
+					<a href="<?php echo home_url();?>" class="pull-left">
+						<img src="<?php bloginfo('template_url');?>/assets/images/logo-clientes.png">
+					</a><!-- .pull-left -->
+					<?php get_template_part('content','nav-mobile'); ?>
+				</div><!-- .row -->
+			</div><!-- .container -->
+	</header><!-- .nav_clientes -->
 	<div class="container">
 		<div id="main" class="site-main row">
