@@ -7,7 +7,7 @@
  */
 
 get_header('home'); ?>
-<header id="content" class="col-md-6 pull-right home-content" role="main">
+<header id="content" class="col-md-7 pull-right home-content" role="main">
 	<img src="<?php bloginfo('template_url'); ?>/assets/images/logo-home.png" class="logo-home" align="center">
 	<div class="col-md-12">
 			<nav class="menu_principal" id="nav-home">

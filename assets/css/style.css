@@ -32,7 +32,7 @@ float: none !important
 	margin-top:40px;
 }
 #nav-home a{
-	margin-left:20px;
+	margin-left:15px;
 	font-family: 'Dosis', sans-serif;
 	font-size: 1.6em;
 	text-transform: uppercase;
@@ -486,9 +486,9 @@ font-size: 1.0em;
 		font-size:1.1em;
 		text-align: center;
 	}
-	.reveal-modal iframe{
-		width:100% !important;
-	}
+}
+.reveal-modal iframe{
+	width:100% !important;
 }
 .next-post-reveal-nav,.prev-post-reveal-nav{
 	display:none !important;
