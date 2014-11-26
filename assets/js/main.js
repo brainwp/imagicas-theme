@@ -65,7 +65,6 @@ if($(window).width() >= 1920){
 		console.log('chamou?');
 	});
 }
-if==
 if( $("#sync1").length > 0 ){
 	$('.nav_clientes a:contains("Clientes")').addClass('active');
 	$('html').attr('style','overflow: hidden !important');
