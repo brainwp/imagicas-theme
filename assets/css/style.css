@@ -71,6 +71,9 @@ float: none !important
 #home-body header.nav_clientes{
     display:none;
 }
+#clientes_title_mob{
+    display:none;
+}
 @media only screen and (max-width : 767px) {
     #nav-home .nav>li, #nav-home .nav>li>ul>li {
     	text-align:center !important;
@@ -107,6 +110,18 @@ float: none !important
     }
     .logo-home{
     	display:none !important;
+    }
+    #clientes_title_mob{
+    	display:block;
+    	color:white;
+    	font-size:1.5em;
+    	text-align: center;
+    }
+    #clientes_title{
+    	display:none;
+    }
+    .author_name .next{
+    	margin-right: -40px;
     }
 }
 #home-body footer{

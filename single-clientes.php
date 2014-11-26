@@ -44,4 +44,4 @@ get_header('clientes'); ?>
 
 
 <?php
-get_footer('home');
+get_footer('clientes');

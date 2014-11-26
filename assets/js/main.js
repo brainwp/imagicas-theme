@@ -127,8 +127,14 @@ $('#nav_mobile_toggle').on('click',function(e){
 	    $(this).attr('data-open','false');
 	}
 });0
-if($(window).width() >= 760){
-	var h = $('.logo-home').height() + 10;
-	$('#nav-home').css('margin-top',h + 'px');
+var resize_home = function(){
+	if($(window).width() >= 767){
+		var h = $('.logo-home').height() + 10;
+		$('#nav-home').css('margin-top',h + 'px');
+	}
 }
+resize_home();
+$(window).on('resize',function(){
+	resize_home();
+});
 });

@@ -47,14 +47,15 @@
 				?>
 			</nav><!-- .pull-right -->
 			<?php get_template_part('content','nav-mobile'); ?>
-		</div><!-- .row -->
+ 		</div><!-- .row -->
 	</div><!-- .container -->
 </header><!-- .nav_clientes -->
 <footer class="slider_clientes_nav">
+	<h1 id="clientes_title_mob"><?php the_title();?></h1>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 pull-left author_name">
-				<h1><?php the_title();?></h1>
+				<h1 id="clientes_title"><?php the_title();?></h1>
 				<?php
 				$next_post = get_next_post();
 				if($next_post && !empty($next_post)){
