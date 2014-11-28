@@ -22,13 +22,15 @@ get_header('laboratorio'); ?>
 	</a><!-- .col-md-12 box_simples -->
 	<?php endwhile; ?>
 </div><!-- .col-md-4 lab_content_simples -->
-<div class="col-md-3 pull-right lab_content_destaque">
-	<?php query_posts('lab_tax=destacado&posts_per_page=2'); ?>
+<div class="col-md-4 pull-right lab_content_destaque">
+	<?php query_posts('lab_tax=destacado&posts_per_page=-1'); ?>
 	<?php while ( have_posts() ) : the_post(); ?>
-	<a href="<?php echo get_post_meta( get_the_ID(), 'link_lab', true ); ?>" class="col-md-12 box_destaque">
-		<span class="pull-left titulo"><?php the_title(); ?></span>
-		<?php the_post_thumbnail('medium'); ?>
-	</a><!-- .col-md-12 box_destaque -->
+	<div class="col-md-6 col-xs-6 destaque_container">
+		<a href="<?php echo get_post_meta( get_the_ID(), 'link_lab', true ); ?>" class="col-md-12 box_destaque">
+			<span class="pull-left titulo"><?php the_title(); ?></span>
+			<?php the_post_thumbnail('medium'); ?>
+	    </a><!-- .col-md-12 box_destaque -->
+	</div><!-- .col-md-12 destaque_container -->
 	<?php endwhile; ?>
 </div><!-- .col-md-5 lab_content_destaque -->
 <?php

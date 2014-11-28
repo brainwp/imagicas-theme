@@ -489,11 +489,14 @@ font-size: 1.0em;
 	font-family: 'Lato', sans-serif;
 }
 .lab_content_destaque .box_destaque span.titulo{
-	font-size:1.1em;
+	font-size:0.9em;
 	text-transform: uppercase;
 }
 .lab_content_destaque img{
 	width:100%;
+}
+.destaque_container{
+	padding:2px;
 }
 @media only screen and (max-width : 767px) {
 	.lab_content_destaque .box_destaque,.lab_content_simples .box_simples{
