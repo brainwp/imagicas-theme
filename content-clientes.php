@@ -19,6 +19,7 @@
 			<div class="col-md-6 pull-right content_frase">
 				<div class="col-md-12 pull-left icone-left"></div>
 				<p><?php echo wp_strip_all_tags(get_the_content()); ?></p>
+				<a class="frase_click frase_click_mob"><?php _e('[fechar]','techcd-theme'); ?></a>
 				<div class="col-md-12 pull-left icone-right"></div>
 			</div><!-- .col-md-5 pull-right content_frase -->
 		</div><!-- .row -->
@@ -69,7 +70,7 @@
 				}
 				?>
 			</div><!-- .col-md-4 author_name -->
-			<div class="col-md-2 pull-right icone_nav" data-show="false" id="frase_click">
+			<div class="col-md-2 pull-right icone_nav frase_click" data-show="false" id="frase_click">
 			</div><!-- .col-md-2 pull-right icone_nav -->
 			<div class="clientes_slider_sync col-md-5 pull-right" id="sync2">
 				<?php

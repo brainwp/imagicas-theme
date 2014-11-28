@@ -81,15 +81,26 @@ $('.item').on('click',function(){
 	$('#sync2').slickGoTo(num);
 });
 
-$('#frase_click').on('click',function(){
-	var show = $(this).attr('data-show');
+$('.frase_click').on('click',function(){
+	if($(window).width() <= 767){
+		$('#frase').css('max-height',$(window).height() + 'px');
+	}
+	var show = $('#frase_click').attr('data-show');
 	if(show == 'false'){
 		$('#frase').fadeIn();
-		$(this).attr('data-show','true');
+		$('#frase_click').attr('data-show','true');
+		if($(window).width() <= 767){
+			$('html').attr('style','overflow: scroll !important');
+		    $('body').attr('style','overflow: scroll !important');
+		    $('footer.slider_clientes_nav').css('opacity','0.30');
+	    }
 	}
 	else{
+		$('footer.slider_clientes_nav').css('opacity','1.0');
 	    $('#frase').fadeOut();
-	    $(this).attr('data-show','false');
+	    $('#frase_click').attr('data-show','false');
+	    $('html').attr('style','overflow: hidden !important');
+		$('body').attr('style','overflow: hidden !important');
 	}
 });
 

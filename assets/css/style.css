@@ -74,6 +74,9 @@ float: none !important
 #clientes_title_mob{
     display:none;
 }
+.frase_click_mob{
+	display:none;
+}
 @media only screen and (max-width : 767px) {
     #nav-home .nav>li, #nav-home .nav>li>ul>li {
     	text-align:center !important;
@@ -122,6 +125,20 @@ float: none !important
     }
     .author_name .next{
     	margin-right: -40px;
+    }
+    #frase{
+    	background:rgba(0,0,0,0.9) !important;
+    	bottom: 0 !important;
+    	position: absolute !important;
+    	z-index: 99999 !important;
+    }
+    .frase_click_mob{
+    	display:block;
+    	text-align: center;
+    	font-size:1.1em;
+    	font-family: 'Dosis', sans-serif;
+    	width:100%;
+    	color:white !important;
     }
 }
 #home-body footer{
