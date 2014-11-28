@@ -15,7 +15,7 @@
 	else{
      	$bg_img = wp_get_attachment_image_src( $bg_img, 'th_clientes', false);
 	    $bg_img = $bg_img[0];
-		$bg_img = 'background: url('.$bg_img.') no-repeat center left fixed';
+		$bg_img = 'background: url('.$bg_img.') no-repeat left fixed';
 	}
 ?><!DOCTYPE html>
 <!--[if IE 7]>

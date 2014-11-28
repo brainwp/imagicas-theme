@@ -17,7 +17,7 @@ float: none !important
 	top:0;
 	bottom:0;
 	margin:0 auto;
-	left:0;
+	left:160px;
 	right:0;
 	position: absolute;
 	padding-top:10px;
@@ -30,6 +30,9 @@ float: none !important
 
 #nav-home{
 	margin-top:380px;
+}
+#nav-home .navbar-nav{
+	float:right;
 }
 #nav-home a{
 	margin-left:15px;
@@ -76,6 +79,11 @@ float: none !important
 }
 .frase_click_mob{
 	display:none;
+}
+@media only screen and (max-width : 990px) {
+	#nav-home .navbar-nav li a{
+		padding: 0px 0px !important;
+	}
 }
 @media only screen and (max-width : 767px) {
     #nav-home .nav>li, #nav-home .nav>li>ul>li {
@@ -489,7 +497,7 @@ font-size: 1.0em;
 	font-family: 'Lato', sans-serif;
 }
 .lab_content_destaque .box_destaque span.titulo{
-	font-size:0.9em;
+	font-size:0.7em;
 	text-transform: uppercase;
 }
 .lab_content_destaque img{
