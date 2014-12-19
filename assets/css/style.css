@@ -503,6 +503,7 @@ font-size: 1.0em;
 }
 .lab_content_destaque img{
 	width:100%;
+	height:180px;
 }
 @media only screen and (max-width : 767px) {
 	.lab_content_destaque .box_destaque,.lab_content_simples .box_simples{

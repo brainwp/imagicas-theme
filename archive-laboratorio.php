@@ -10,7 +10,6 @@ get_header('laboratorio'); ?>
 <div id="is_lab" style="display:none" data-lab="true"></div>
 <div class="col-md-4 pull-left lab_content">
 	<div class="col-md-12" style="margin-top:10px;float:none;clear:both"></div>
-	<h1>Sobre o Imagicas</h1>
 	<p class="intro"><?php echo strip_tags($opts['lab_intro'], '<a>'); ?></p><!-- .intro -->
 	<div class="col-md-12 lab_content_simples">
 		<?php query_posts('lab_tax=simples&posts_per_page=-1'); ?>
